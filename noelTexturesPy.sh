@@ -9,7 +9,7 @@ fi
 execpath=`dirname $0`
 execpath=`realpath $execpath`
 
-container=docker://noelmni/pynoel-gui-app:latest
+container=`shub-cache docker://noelmni/pynoel-gui-app:latest`
 script=$execpath/run.py
 
 singularity exec -e $container $script $@
