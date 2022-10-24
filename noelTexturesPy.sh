@@ -1,8 +1,14 @@
 #!/bin/bash
 
-if [ "$#" -lt 4 ]
+#if [ "$#" -lt 4 ]
+#then
+#    echo "Usage: $0 ID T1 T2 output_dir"
+#    exit 1
+#fi
+
+if [ "$#" -lt 3 ]
 then
-    echo "Usage: $0 ID T1 T2 output_dir"
+    echo "Usage: $0 ID T1 output_dir"
     exit 1
 fi
 
